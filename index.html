@@ -1,0 +1,147 @@
+f
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    　
+    <meta charset="UTF-8">
+    　
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    　
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    　
+    <link rel="stylesheet" 　　 href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 　　
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/2e340d71ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles.css" class="ref">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- - - - ROW 1 // HEADER (contains search form)- - - -->
+        <header>
+            <form class="search-form" id="search-form">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="search" placeholder="Type a city.." autofocus="on" autocomplete="off"
+                            id="city-input" value="Search" />
+
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" value="Search" id="submit-button">
+                            <i class="fas fa-search"></i>
+
+                        </button>
+                    </div>
+
+                </div>
+
+            </form>
+        </header>
+
+        <!-- - - - ROW 2 // SECTION (contains temp values and icon)- - - -->
+
+        <div class="row">
+            <div class="col-6">
+                <h1 id="city">
+                    Tokyo
+                </h1>
+                <ul>
+                    <li id="date"></li>
+                    </li>
+                    <li id="description"></li>
+                </ul>
+            </div>
+
+            <div class="col-6">
+                <h2>
+                    <span class="temperature" id="temperature">
+                        </a></span><span class="units">
+                        <a href="#" id="celsius-link">°C</a> |
+                        <a href="#" id="fahrenheit-link">°F</a></span>
+                </h2>
+                <ul>
+                    <li>
+                        max 10/min 8
+                    </li>
+                    <li>
+                        Feels like 1ºC
+                    </li>
+                </ul>
+            </div>
+
+            <div class="icon">
+                <i class="fas fa-cloud-sun"></i>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="wind">
+                            <p class="card-text">
+                                <span id="wind">
+                                    Wind Speed:
+                                </span>m/s
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="humidity">
+                            <p class="card-text">
+                                <span id="humidity">
+                                    Humidity: 50
+                                </span>%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="forecast">
+                        <p id="day1">00:00</p>
+                        <img src="https://openweathermap.org/img/wn/01n@2x.png" id="icon1"></img>
+                        <p id="temp1"><strong><span id="temp1-max">10</span>º </strong> / <span id="temp1-min">8</span>º
+                        </p>
+                    </div>
+
+                    <div class="forecast">
+                        <p id="day2">3:00</p>
+                        <img src="https://openweathermap.org/img/wn/01n@2x.png" id="icon2"></img>
+                        <p id="temp2"><strong><span id="temp2-max">10</span>º </strong> / <span id="temp2-min">8</span>º
+                        </p>
+                    </div>
+
+                    <div class="forecast">
+                        <p id="day3">6:00</p>
+                        <img src="https://openweathermap.org/img/wn/01n@2x.png" id="icon3"></img>
+                        <p id="temp3"><strong><span id="temp3-max">10</span>º </strong> / <span id="temp3-min">8</span>º
+                        </p>
+                    </div>
+
+                    <div class="forecast">
+                        <p id="day4">9:00</p>
+                        <img src="https://openweathermap.org/img/wn/01n@2x.png" id="icon4"></img>
+                        <p id="temp4"><strong><span id="temp4-max">10</span>º </strong> / <span id="temp4-min">8</span>º
+                        </p>
+                    </div>
+
+                    <div class="forecast">
+                        <p id="day5">12:00</p>
+                        <img src="https://openweathermap.org/img/wn/01n@2x.png" id="icon5"></img>
+                        <p id="temp5"><strong><span id="temp5-max">10</span>º </strong> / <span id="temp5-min">8</span>º
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
