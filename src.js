@@ -75,7 +75,4 @@ dateElement.innerHTML = formatDate(currentTime);
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
-let submitButton = document.querySelector("#submit-button");
-submitButton.addEventListener("click", getCurrentLocation);
-
 searchCity("Tokyo");
