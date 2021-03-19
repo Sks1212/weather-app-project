@@ -3,19 +3,17 @@
 
 <head>
     　
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     　
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     　
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     　
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 　　
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
-    crossorigin="anonymous" />
+    <link rel="stylesheet" 　　 href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 　　
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://kit.fontawesome.com/2e340d71ef.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="src/style.css" class="ref" />
+    <link rel="stylesheet" href="src/style.css" class="ref">
     <title>Weather App</title>
 </head>
 
@@ -27,19 +25,24 @@
             <form class="search-form" id="search-form">
                 <div class="row">
                     <div class="col-6">
-                        <input type="text" placeholder="Search for a city" id="input" />
-                        <button type="submit" value="Search" id="submit-button">
+                        <input type="search" placeholder="Type a city.." autofocus="on" autocomplete="off"
+                            id="city-input" value="Search" />
+
                     </div>
                     <div class="col-6">
                         <button type="submit" value="Search" id="submit-button">
                             <i class="fas fa-search"></i>
+
                         </button>
                     </div>
+
                 </div>
+
             </form>
         </header>
 
         <!-- - - - ROW 2 // SECTION (contains temp values and icon)- - - -->
+
         <div class="row">
             <div class="col-6">
                 <h1 id="city">
@@ -137,9 +140,13 @@
         </div>
     </div>
     </div>
-    <div class="col">
-        <p><a href="https://github.com/Sks1212">Open-source code</a> by Barbara R.</p>
-    </div>
     <script src="src/index.js"></script>
 </body>
+<div class="col">
+    <p><a href="https://github.com/Sks1212">Open-source code</a> by Barbara R.</p>
+</div>
+<script src="src/index.js"></script>
+</body>
 </html>
+
+ 
