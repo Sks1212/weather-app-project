@@ -13,17 +13,18 @@ body {
 }
 
 header {
-  width: 100%;
+  width: 130%;
   padding: 10px;
 }
 
 form button {
-  padding: 8px;
-  border: none;
+  padding: 3px 10px;
+  border-radius: 5px;
   background-color: violet;
   color: purple;
   cursor: pointer;
   margin-right: 150px;
+  margin-bottom: 50px;
 }
 
 form {
@@ -55,21 +56,24 @@ li {
 .icon {
   text-align: center;
   font-size: 130px;
-  padding: 5px 5px;
+  padding: 3px 3px;
   color: orange;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .card {
   padding: 10px;
   border-radius: 25px;
-  align-items: center;
+  text-align: center;
+  width: 200px;
+  margin-left: 40px;
 }
 
 footer {
   width: 500%;
-  margin-top: 5px;
   display: flex;
-  padding: 10px;
+  padding: 30px;
   text-align: center;
+  margin-left: 40px;
+  
 }
