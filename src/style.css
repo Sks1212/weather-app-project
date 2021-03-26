@@ -24,7 +24,7 @@ form button {
   color: purple;
   cursor: pointer;
   margin-right: 150px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 form {
@@ -55,7 +55,7 @@ li {
 
 .icon {
   text-align: center;
-  font-size: 130px;
+  font-size: 100px;
   padding: 3px 3px;
   color: orange;
   margin-bottom: 10px;
